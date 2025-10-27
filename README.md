@@ -1,42 +1,42 @@
 # FletApp app
 
-## Run the app
+para que puedan instalar y probar la app coloquen estos comandos en la terminal en orden 🐈‍⬛
 
-### uv
+## Instalacion
+Abran vsc en una carpeta vacia y abren la terminal (ctrl+shift+ñ)
 
-Run as a desktop app:
-
+### Clonar la app 
 ```
-uv run flet run
-```
-
-Run as a web app:
-
-```
-uv run flet run --web
+git clone https://github.com/Mar7155/fissures-detection-app
 ```
 
-### Poetry
-
-Install dependencies from `pyproject.toml`:
-
+### despues corran este comando o arrastren la carpeta que se creo en visual
 ```
-poetry install
+cd .fissures-detection-app
 ```
 
-Run as a desktop app:
+### Instalar dependencias 😸
 
+(opcional por si quieren borrar la bilbioteca despues y no se quede en la raiz de su laptop)
 ```
-poetry run flet run
+python -m venv .venv  
+```
+(opcional tambien por si corrieron el comando de arriba)
+```
+.venv\Scripts\activate
 ```
 
-Run as a web app:
-
+### instalar flet 
 ```
-poetry run flet run --web
+pip install -r requirements.txt    
 ```
 
-For more details on running the app, refer to the [Getting Started Guide](https://flet.dev/docs/getting-started/).
+## Iniciar la app
+
+### Corre la app y muestra cambios en tiempo real 
+```
+flet run
+```
 
 ## Build the app
 
